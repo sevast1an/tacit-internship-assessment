@@ -1,0 +1,162 @@
+/**********************GRID STYLES************************/
+.span-12, .span-11, .span-10, .span-9, .span-8, .span-7, .span-6, .span-5, .span-4, .span-3, .span-2, .span-1 {
+  @include span(12 of 12);
+}
+
+.tab-1 {
+  @include span(1 of 12);
+}
+
+.tab-2 {
+  @include span(2 of 12);
+}
+
+.tab-3 {
+  @include span(3 of 12);
+}
+
+.tab-4 {
+  @include span(4 of 12);
+}
+
+.tab-5 {
+  @include span(5 of 12);
+}
+
+.tab-6 {
+  @include span(6 of 12);
+}
+
+.tab-7 {
+  @include span(7 of 12);
+}
+
+.tab-8 {
+  @include span(8 of 12);
+}
+
+.tab-9 {
+  @include span(9 of 12);
+}
+
+.tab-10 {
+  @include span(10 of 12);
+}
+
+.tab-11 {
+  @include span(11 of 12);
+}
+
+.tab-12 {
+  @include span(12 of 12);
+}
+
+.col-4 {
+  @include span(4 of 8);
+  margin-bottom: px-rem(20);
+}
+
+.span-last {
+  float: none;
+}
+
+.innerWrapper {
+  @include span(8 of 8);
+}
+
+/****************************HTML-BODY STYLES*****************/
+
+//HEADER IMAGE
+.headerImage .wrapper2 .img-overlay{
+  left: 30%;
+}
+
+
+//TOP FILTER SECTION
+.top-filter ul {
+  .filter, .refresh-icon{
+    display: none;
+  }
+  .sort{
+    width:34%;
+  }
+  .show-items{
+    width: 36%;
+  }
+  .grid, .list-grid{
+    width: 10%;
+  }
+  .view{
+    width: 10%;
+  }
+}
+
+
+//SIDE FILTER
+.sideFilter{
+  .categories{
+    width: 34.1%;
+  }
+  .products-grid{
+    width: 63.5%;
+  }
+}
+
+//PAGINATION
+.pagination ul li{
+  width: 6%;
+}
+.pagination ul li.empty{
+  width: 29%;
+}
+
+
+//LOGO SECTION
+.logo-section .logo-block{
+  width: 50%;
+}
+
+
+//FOOTER STYLES
+.mainFooter{
+  .uk-container{
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .firstFooter{
+      position: relative;
+      width: 35%;
+      order: 2;
+      flex-direction: column;
+      right: 15%;
+      .flex-item{
+        justify-content: center;
+        padding-left:0px;
+      }
+    }
+    .secondFooter{
+      width: 65%;
+      order: 1;
+      flex-direction: column;
+      .flex-item{
+
+      }
+    }
+    .thirdFooter{
+      width: 50%;
+      order: 2;
+      position: relative;
+      left: 30%;
+      bottom: 115px;
+      padding-left:0;
+
+    }
+  }
+}
+.mainFooter .uk-container .column form .uk-margin input{
+  width: 50%;
+}
+.mainFooter .uk-container .column form .uk-margin button{
+  width: 30%;
+}

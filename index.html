@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/uikit.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+
+<div class="uk-section navigation">
+    <div class="uk-container main-nav">
+        <nav class="uk-navbar-container" uk-navbar>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="img/logo.png" alt="logo"></a>
+            <div class="uk-navbar-center">
+
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+
+            </div>
+            <div class="uk-navbar-right">
+                <button uk-icon="icon: cart"></button>
+                <ul id="cart" class="mystyle">0</ul>
+                <div>
+                    <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+                    <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-expand">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                </form>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-section header-top">
+    <div class="uk-container">
+        <h1 class="uk-heading-primary">Men’s Lifestyle Clothing</h1>
+        <ul class="uk-breadcrumb ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Clothing</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="headerImage">
+    <div class="uk-container">
+        <section class="wrapper" style="background-image: url('img/image.png');">
+            <div class="img-overlay">
+                <p>lifestyle</p>
+                <p>New Now: Striped cotton</p>
+                <button>More Info</button>
+            </div>
+        </section>
+        <section class="wrapper2" style="background-image: url('img/image2.png');">
+            <div class="img-overlay">
+                <p>lifestyle</p>
+                <p>Fashion</p>
+                <p>Collecttion</p>
+                <button>More Info</button>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="uk-container top-filter">
+    <ul>
+        <li class="filter">Filter</li>
+        <li class="refresh-icon"><i class="fa fa-refresh" aria-hidden="true"></i></li>
+        <li class="sort">SORT BY: Price $ - $$ <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        <div uk-dropdown="duration: 300; delay-hide: 200; pos: bottom-justify"  class="sortSubMenu uk-width-1-5">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">$</a></li>
+                <li><a href="#">$$</a></li>
+                <li><a href="#">$$$</a></li>
+            </ul>
+        </div>
+        <li class="show-items">Show: 16 <i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        <div uk-dropdown=" duration: 300; delay-hide: 200; pos: bottom-justify"  class="sortSubMenu uk-width-1-5">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">16</a></li>
+                <li><a href="#">32</a></li>
+            </ul>
+        </div>
+        <li class="grid"><button class="btn active" onclick="gridView()"><i class="fa fa-th" aria-hidden="true"></i></button></li>
+        <li class="list-grid"><button class="btn" onclick="listView()"><i class="fa fa-th-list" aria-hidden="true"></i></button></li>
+        <li class="view">View all</li>
+    </ul>
+</div>
+
+<main class="uk-container sideFilter">
+    <div class="categories">
+        <button class="accordion">Categories</button>
+        <div class="panel">
+            <ul>
+                <li>Lifestyle <span>01</span></li>
+                <li>Running <span>15</span></li>
+                <li>Training & Gym <span>20</span></li>
+                <li>Clothing <span>25</span></li>
+                <li>Scarves <span>30</span></li>
+                <li>Accessories <span>35</span></li>
+                <li>Shoes <span>45</span></li>
+                <li>Fragrance <span>50</span></li>
+                <li>Football <span>32</span></li>
+            </ul>
+        </div>
+        <button class="accordion">Size</button>
+        <div class="panel">
+            <ul>
+                <li>S</li
+                ><li>M</li
+                ><li>L</li
+                ><li>XL</li>
+            </ul>
+        </div>
+    </div>
+    <div class="products-grid">
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m grid-row" uk-grid>
+            <div class="grid-container">
+                <div class="product-container item" data-price="100">
+                    <div class="product-image">
+                        <img src="img/products/product-1.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="old-price">$200.00 USD</span>
+                            <span class="new-price">$100.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="amount">
+                                <div class="fa fa-minus" id="minus"></div>
+                                <span><span class="total" id="amount">1</span></span>
+                                <div href="#" class="fa fa-plus" id="plus"></div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn" id="add">
+
+                                    Add to cart
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container item" data-price="175">
+                    <div class="product-image">
+                        <img src="img/products/product-2.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="new-price">$175.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-3.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="new-price">$200.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-4.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="old-price">$200.00 USD</span>
+                            <span class="new-price">$100.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-5.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="new-price">$175.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-6.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="new-price">$200.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-7.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="new-price">$100.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-8.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="new-price">$100.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="img/products/product-3.png" alt="black tshirt">
+                    </div>
+                    <div class="text-container">
+                        <div class="text-content">
+                            <h5 class="product-title">Essential Cotton blend</h5>
+                            <span class="old-price">$200.00 USD</span>
+                            <span class="new-price">$100.00 USD</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="counter">
+                                <button class="add-remove">
+                                    <a class="remove">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                    <span class="number-of-items">01</span>
+                                    <a class="add">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="add-to-cart">
+                                <button>
+                                       <span>
+                                           + Add to Cart
+                                       </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="uk-container pagination">
+    <ul>
+        <li><a href="#"><span uk-pagination-previous></span></a></li>
+        <li class="empty">&nbsp;</li>
+        <li><a href="#">01</a></li>
+        <li><a href="#">02</a></li>
+        <li class="uk-active"><a href="#">03</a></li>
+        <li><a href="#">04</a></li>
+        <li><a href="#">05</a></li>
+        <li class="empty">&nbsp;</li>
+        <li><a href="#"><span uk-pagination-next></span></a></li>
+    </ul>
+</div>
+
+<div class="slideContainer">
+    <section class="wrapper" style="background-image: url('img/slide-2.jpg');">
+        <div class="divider text-inside">
+            <span>NEW PRODUCT</span>
+            <span>The new Collection</span>
+            <span>of Summer</span>
+        </div>
+    </section>
+</div>
+
+<div class="uk-container logo-section">
+    <div class="logo-block">
+        <img src="img/logo2.png" alt="logo">
+    </div>
+    <div class="logo-block">
+        <img src="img/logo3.png" alt="logo">
+    </div>
+    <div class="logo-block">
+        <img src="img/logo4.png" alt="logo">
+    </div>
+    <div class="logo-block">
+        <img src="img/logo5.png" alt="logo">
+    </div>
+</div>
+
+
+<footer class="uk-section mainFooter">
+    <div class="uk-container">
+        <div class="column firstFooter">
+            <div class="footer-logo flex-item">
+                <a class="uk-logo" href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="socials flex-item">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.behance.net"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                <a href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="column secondFooter">
+            <div class="footer-menu flex-item">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">Man</a></li>
+                    <li><a href="#">Woman</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <form class="flex-item" >
+                <fieldset class="uk-fieldset">
+
+                    <legend class="uk-legend">Subscribe to news</legend>
+
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Email Adrress">
+                        <button class="uk-button uk-button-default">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="column thirdFooter">
+            <div class="contact flex-item">
+                <p>Contact US</p>
+                <span>San Francisco, California</span>
+                <span>400 Castro St, San Francisco, CA</span>
+                <span>(+1) 686-868-9999</span>
+                <div class="paymentMethods">
+                    <img src="img/visa.png" alt="visa">
+                    <img src="img/paypall.png" alt="visa">
+                    <img src="img/mastercard.png" alt="visa">
+                    <img src="img/electron.png" alt="visa">
+                    <img src="img/amex.png" alt="visa">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

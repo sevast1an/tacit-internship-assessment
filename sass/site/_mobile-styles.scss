@@ -1,0 +1,88 @@
+/**********************GRID STYLES************************/
+// Remove tablet grid
+.tab-12, .tab-11, .tab-10, .tab-9, .tab-8, .tab-7, .tab-6, .tab-5, .tab-4, .tab-3, .tab-2, .tab-1 {
+	@include span(12 of 12);
+}
+
+.mob-1{ @include span(1 of 12); }
+.mob-2{ @include span(2 of 12); }
+.mob-3{ @include span(3 of 12); }
+.mob-4{ @include span(4 of 12); }
+.mob-5{ @include span(5 of 12); }
+.mob-6{ @include span(6 of 12); }
+.mob-7{ @include span(7 of 12); }
+.mob-8{ @include span(8 of 12); }
+.mob-9{ @include span(9 of 12); }
+.mob-10{ @include span(10 of 12); }
+.mob-11{ @include span(11 of 12); }
+.mob-12{ @include span(12 of 12); }
+
+.col-4 {
+	@include span(6 of 6);
+	margin-bottom:px-rem(20);
+}
+
+.innerWrapper {
+	@include span(12 of 12);
+}
+/****************BUTTONS STYLES*****************/
+.button {
+	width:100%;
+	margin-right:0;
+	display:block;
+}
+/*************************HTML-BODY STYLES****************/
+
+
+//HEADER TOP
+.header-top{
+	padding-top:20px;
+	padding-bottom: 20px;
+	.uk-breadcrumb{
+		display: none;
+	}
+	.uk-heading-primary{
+		margin-bottom: 0;
+	}
+}
+.headerImage{
+	margin-top: 0;
+	.uk-container{
+		padding-left: 0;
+		padding-right:0;
+	}
+}
+
+.top-filter{
+	padding-left:0;
+	padding-right:0;
+}
+
+
+//PAGINATION
+.pagination ul li.empty{
+	display: none;
+}
+.pagination ul li{
+	width: 20%;
+	&:nth-of-type(3){
+		display: none;
+	}
+	&:nth-of-type(7){
+		display: none;
+	}
+
+}
+
+//SLIDE CONTAINER
+.slideContainer{
+	.divider{
+		width: 70%;
+	}
+}
+
+//LOGO SECTION
+.logo-section .logo-block{
+	width: 100%;
+}
+

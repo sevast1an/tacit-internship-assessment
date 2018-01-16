@@ -1,0 +1,86 @@
+// Theme Colors
+$color-white: #fff;
+$color-black: #000;
+$color-blue: #3853d8;
+$color-dark-blue: #0021c4;
+$color-lightBrown: #cea07e;
+$color-lightBrown-hover: #d3aa8b;
+$color-lightGrey: #adb5bd;
+$color-grey: #363637;
+$color-yellow: #edd9a3;
+
+
+// Menu Colors Settings
+$color-initial-items: white;
+$color-hovered-items: $color-dark-blue;
+$color-active-items: grey;
+
+/* FONTS & BODY -----------------------*/
+$font__main: 'Montserrat', sans-serif;
+$font__size: 15px;
+$color__text-main: #404040;
+$font__headings: $font__main;
+$font__line-height-body: 25px;
+$paragraph_padding_bottom: $font__line-height-body;
+$color__background-body: $color-white;
+/*-------------------------------------*/
+
+/* BUTTON -----------------------------*/
+$button__height : 50px;
+$color__background-button: #e6e6e6;
+$color__background-button-hover: #B3B3B3;
+$color__button: #222222;
+$color__heading: #902d25;
+/*-------------------------------------*/
+
+/* INPUTS -----------------------------*/
+$color__border-input: #ccc;
+$color__border-input-focus: $color__background-button;
+$color__border_input_error: #cc442e;
+$color__input-placeholder: $color__text-main;
+$input__placeholder_font_size: $font__size;
+$input__placeholder_opacity: 0.5;
+$color__text-input: $color__text-main;
+$color__text-input-focus: $color__text-main;
+/*-------------------------------------*/
+
+/* LINKS ------------------------------*/
+$color__link: $color-blue;
+$color__link-hover: midnightblue;
+/*-------------------------------------*/
+
+/* OTHER ------------------------------*/
+$color__background-hr: #ccc;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #777;
+$center_width: 1200px;
+/*-------------------------------------*/
+
+/* FONT WEIGHTS ----------------------------*/
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+/*-------------------------------------------*/
+
+
+$transition: all 0.5s ease;
+//******************************FONTS STYLES*********************/
+@mixin font($type:$font__main, $weight: $regular, $style: normal) {
+  font-family: $type;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin transition($prop : all, $time-duration : .4s, $type: ease) {
+  -webkit-transition: $prop $time-duration $type;
+  -moz-transition: $prop $time-duration $type;
+  -ms-transition: $prop $time-duration $type;
+  -o-transition: $prop $time-duration $type;
+  transition: $prop $time-duration $type;
+}
+
+
